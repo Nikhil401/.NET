@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header"></h1>
+    
+    <script>
+        var sd=document.getElementById("header").innerHTML="ASSIGNMENT";
+        // odd or even
+        document.write("<h2>Q.1 </h2> <br>");
+        var n=11;
+        if(n%2==0)
+        {
+            document.write(+n+" is a even number <br>");
+        }
+        else
+        {
+            document.write(+n+" is a odd number <br>");
+            
+        }
+        document.write("<hr>")
+
+        //swap of two value
+        document.write("<h2>Q.2 </h2> <br>");
+        var n1=10, n2=20;
+        document.write("Before swapping: n1:"+n1+" and n2: "+n2+"<br>");
+        var temp=n1;
+        n1=n2;
+        n2=temp;
+        document.write("After Swapping using 3rd variable. n1: "+n1+" and n2: "+n2+"<br>");
+
+        var v1=50,v2=100;
+        document.write("Before swapping: v1:"+v1+" and v2: "+v2+"<br>");
+        v1=v1+v2;
+        v2=v1-v2;
+        v1=v1-v2;
+        document.write("After Swapping without using 3rd variable. v1: "+v1+" and v2: "+v2+"<br>");
+        var x = 200, y = 300;
+        document.write("Before swapping: x:"+x+" and y: "+y+"<br>");
+        (x ^= y), (y ^= x), (x ^= y);
+        document.write("After Swapping without using 3rd variable. x: "+x+" and y: "+y+"<br>");
+        document.write("<hr>")
+
+        //Find total,grade and percentage of the subject
+        document.write("<h2>Q.3 </h2> <br>");
+        var hindi=79, english=86, science=72, social_science=67,maths=88;
+        var total=hindi+english+science+social_science+maths;
+        document.write("Total marks: "+total);
+        document.write("<br>");
+        var percentage=total/5;
+        
+        if(hindi>=35 && english>=35 && science>=35 && social_science>=67 && maths>=35)
+        {
+            if(percentage>80)
+            {
+                document.write("percentage: "+percentage);
+                document.write("<br> Grade: A");
+            }
+            else if(percentage>60 && percentage<=80)
+            {
+                
+                document.write("percentage: "+percentage);
+                document.write("<br> Grade: B");
+            }
+            else if(percentage<=60 && percentage>45)
+            {
+                document.write("percentage: "+percentage);
+                document.write("<br> Grade: C");
+            }
+            else
+            {
+                document.write("Fail..! <b> Better luck next time<b>");
+            }
+            
+        }
+        else
+        { 
+            document.write("Fail..! <b> Better luck next time<b>");
+        }
+        
+        document.write("<hr>")
+
+
+        //reverse the number, find sum of digits of number
+        document.write("<h2>Q.4 </h2> <br>");
+        var n=1234;
+        document.write("num= "+n+"<br>");
+        var st=n.toString();
+        var sp=st.split('');
+        var rev=sp.reverse();
+        var nn=rev.join('');
+        document.write("rev= "+nn+"<br>");
+
+        function getSum(n)
+        {
+            var sum=0;
+            while(n!=0)
+            {
+                sum = sum + n % 10;
+                n = parseInt(n/10);
+            }
+            return sum;
+        }
+        document.write("sum= "+getSum(n)+"<br>");
+        document.write("<hr>");
+        
+
+
+        //Factorial
+        document.write("<h2>Q.5 </h2> <br>");
+        function fact(no)
+        {
+            if(no==0 || no==1)
+            {
+                return 1;
+            }
+            else
+            {
+                
+                return (no*fact(no-1));
+                
+            }
+        }
+        var no=4;
+        document.write("Factorial of "+no+" is "+fact(no));
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Strings in JS</h1>
+    
+    <script>
+        var course="Javascript";
+        var course1="HTML";
+        //concat
+        var course2=course1.concat(course);
+        document.write(course2);
+        //indexOf
+        var msg="Welcome to JS... Welcome back";
+        var value=msg.indexOf("Welcome ");
+        document.write("<br>"+value);
+
+        var value1=msg.lastIndexOf("Welcome ");
+        document.write("<br>"+value1);
+
+        //toUpperCase and toLowerCase
+        document.write("<br>"+course1.toLowerCase());
+        document.write("<br>"+course1.toUpperCase()+"<br>");
+        document.write("<hr>");
+        //slice
+        var name="nikhil kumar";
+        var fname=name.slice(0,5);
+        document.write(fname);
+        document.write("<hr>");
+
+        //trim
+        var info="     Hello           world";
+        document.write("<br>"+info);
+        var info1=info.trim();
+        document.write("<br>"+info1);
+        document.write("<hr>");
+
+        //split
+        var topics="String arrays datatypes events";
+        document.write(topics+"<br>")
+        document.write(topics.split(' '));
+        var n=topics.split(' ');
+        document.write("<br>");
+        // when we use split, it will converted into arrays, for Ex-
+        document.write(n[0]);
+        document.write("<hr>");
+        
+
+
+    </script>
+</body>
+</html>

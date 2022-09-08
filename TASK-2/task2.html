@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .parent{
+            width: 100%;
+            float: center;
+            background-color: chocolate;
+            
+        }
+        .header{
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+            background-color: chocolate;
+            border: 2px solid brown;
+            color: white;
+            padding: 10px;
+        }
+        .signup{
+            background-color: lightblue;
+            padding: 5px;
+            width: 100%;
+            height: 30px;
+            text-align: right;
+            border-radius: 2px 2px 2px 2px;
+        }
+        .left{
+            padding: 10px;
+            border-radius: 10px;
+            width: 30%;
+            height: 600px;
+            background-color: cornflowerblue;
+            border: 2px solid darkblue;
+            float: left;
+        }
+        .center{
+            padding: 10px;
+            border-radius: 10px;
+            width: 50%;
+            height: 600px;
+            background-color: grey ;
+            border: 2px solid darkblue;
+            float: left;
+        }
+        .right{
+            padding: 10px;
+            border-radius: 10px;
+            width: 20%;
+            height: 600px;
+            background-color:rgb(64, 159, 128);
+            border: 2px solid rgb(139, 0, 56);
+            float: left;
+
+        }
+        .footer{
+            padding: 10px;
+            text-align: center;
+            color: blueviolet;
+        }
+        .vertical{
+            list-style: none;
+            margin: 0;
+            margin-top: 20px;
+            padding: 10px;
+            width: 200px;
+            position: static;
+            height: 100%;
+            overflow: auto;
+        }
+        li a.verticalnav{
+            display: block;
+            color: darkblue;
+            text-align: left;
+            padding: 5px 5px;
+            text-decoration: none;
+        }
+        li a.verticalnav:hover{
+            background-color: aquamarine;
+
+        }
+        #active{
+            background-color: blueviolet;
+        }
+        p::first-letter{
+            color: red;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        p::first-line{
+            color: blue;
+        }
+        p::selection{
+            color: blue;
+            background-color: aquamarine;
+        }
+        ::marker{
+            color: chartreuse;
+        }
+        body
+        {
+            background-image: url("html.png");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .transition{
+            padding: 10px 10px 10px 50px;
+            width: 200px;
+            height: 150px;
+            text-align: center;
+            transition: width 2s, height 2s, transform 1s;
+        }
+        .transition:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body >
+    <div class="parent">
+            <div>
+                <div class="header">
+                    <h2>E-LEARNING WEBSITE</h2>
+                </div>
+                <div class="signup">
+                    <a href="signup.html">SignUp</a>
+                </div>
+            </div>
+        <div>
+            <div class="left">
+                <ul class="vertical">
+                    <h2>Top Courses</h2>
+                    <li ><a href="" id="active"class="verticalnav" >C Programming</a></li>
+                    <li href=""><a class="verticalnav" >JAVA</a></li>
+                    <li href=""><a class="verticalnav" >JavaScript</a></li>
+                    <li href=""><a class="verticalnav" >C++</a></li>
+                    <li href=""><a class="verticalnav" >HTML</a></li>
+                    <li href=""><a class="verticalnav" >CSS</a></li>
+                </ul>
+            </div>
+            <div class="center">
+                <p><img src="js.png" height="150px" width="160px" alt="js">JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user..!</p>
+                <hr><p><img src="html.png" height="130px" width="160px" alt="js" style="float: left;">HTML is a type of markup language. It encapsulates, or “marks up” data within HTML tags, which define the data and describe its purpose on the webpage. The web browser then reads the HTML, which tells it things like which parts are headings, which parts are paragraphs, which parts are links, etc..!</p>
+                <hr><p><img src="css.png" height="130px" width="160px" alt="js" style="float: right;">CSS stands for Cascading Style Sheets, and it's used to add style to a web page by dictating how a site is displayed on a browser. CSS is unique in that it doesn't create any new elements, like HTML or JavaScript. Instead, it's a language used to style HTML elements..!</p>
+
+            </div>
+            <div class="right">
+                <video height="200px" width="240px" controls autoplay >
+                    <source src="video1.mp4" type="video/mp4"/>
+                </video>
+                <hr>
+                <img src="js.png" class="transition" alt="javaScript">
+                <audio controls autoplay muted style="height: 100px; width: 250px;">
+                    <source src="audio.mp3" type="audio/mp3"/>
+                </audio>
+               
+            </div>
+        </div>
+        <div class="footer">
+            <h2>@copy; www.e-learning.com</h2>
+            
+            
+            
+        </div>
+    </div>
+    
+</body>
+</html>

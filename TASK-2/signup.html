@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <style>
+        body{
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">REGISTRATION FORM</h1>
+    <a href="task2.html">Back</a>
+    <form action="">
+        <fieldset style="margin-left: 300px; margin-right: 300px; background-color: grey; color: white;border-radius: 15px; border-style: inset; border-color: brown; box-shadow: 10px 20px 5px lightblue;margin-bottom: 40px;">
+            <legend style="color: black;">Registration Details</legend>
+            <label>First Name</label> <br>
+            <input type="text" name="fname" required> <br>
+            <label>Lats Name</label> <br>
+            <input type="text" name="lname" required> <br>
+            <label>Email</label> <br>
+            <input type="email" name="email" required> <br>
+            <label>Password</label> <br>
+            <input type="password" name="password" required> <br>
+            <label>Age</label> <br>
+            <input type="number" required min="21" max="25"> <br>
+            <label>Date of Birth</label>
+            <input type="date" required> <br>
+            <label> Gender</label><br>
+            <input type="radio" id="gender" name="gender" value="Male">Male<br>
+            <input type="radio" id="gender" name="gender" value="Female">Male<br>
+            <label>Address</label> <br>
+            <textarea></textarea> <br>
+            <label> Select Course</label><br>
+            <select name="course">
+                <optgroup label="PROGRAMMING">
+                    <option value>C</option>
+                    <option value>C++</option>
+                    <option value>Java</option>
+                    <option value>JavaScript<option>
+                </optgroup>
+                <optgroup label="DATABASE">
+                    <option value>SQL</option>
+                    <option value>ORACLE</option>
+                    <option value>Mongo DB</option>
+                </optgroup>
+            </select><br><br>
+            <!-- <label>Certification Taken</label><br>
+            <input type="checkbox" value="Microsoft Certified"><label>Microsoft Certified</label><br>
+            <input type="checkbox" value="Oracle Certified"><label>Oracle Certified</label><br>
+            <input type="checkbox" value="AZURE Certified"><label>AZURE Certified</label><br>
+            <input type="checkbox" value="MS SQL Certified"><label>MS SQL Certified</label><br><br> -->
+            <input type="submit">
+        </fieldset>
+    </form>
+</body>
+</html>

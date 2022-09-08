@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float Property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .parent{
+            width: 100%;
+            float: center;
+            background-color: burlywood;
+            
+        }
+        .header{
+            text-align: center;
+            background-color: burlywood;
+            border: 2px solid brown;
+            color: white;
+            padding: 10px;
+        }
+        .left{
+            width: 30%;
+            height: 600px;
+            background-color: cornflowerblue;
+            border: 2px solid darkblue;
+            float: left;
+        }
+        .center{
+            width: 50%;
+            height: 600px;
+            background-color: rgb(64, 159, 128);
+            border: 2px solid darkblue;
+            float: left;
+        }
+        .right{
+            width: 20%;
+            height: 600px;
+            background-color: rgb(108, 145, 29);
+            border: 2px solid rgb(139, 0, 56);
+            float: left;
+
+        }
+        .footer{
+            text-align: center;
+            width: 30%;
+            padding: 20px;
+        }
+        .vertical{
+            list-style: none;
+            margin: 0;
+            margin-top: 20px;
+            padding: 10px;
+            width: 200px;
+            position: static;
+            height: 100%;
+            overflow: auto;
+        }
+        li a.verticalnav{
+            display: block;
+            color: darkblue;
+            text-align: left;
+            padding: 5px 5px;
+            text-decoration: none;
+        }
+        li a.verticalnav:hover{
+            background-color: aquamarine;
+
+        }
+        #active{
+            background-color: blueviolet;
+        }
+        p::first-letter{
+            color: red;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        p::first-line{
+            color: blue;
+        }
+        p::selection{
+            color: blue;
+            background-color: aquamarine;
+        }
+        ::marker{
+            color: chartreuse;
+        }
+        body
+        {
+            background-image: url("assets/html.png");
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .transition{
+            width: 100px;
+            height: 100px;
+            transition: width 2s, height 2s, transform 1s;
+        }
+        .transition:hover{
+            width: 200px;
+            height: 200px;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body >
+    <div class="parent">
+        <div class="header">
+            <h2>E-COMMERCE WEBSITE</h2>
+        </div>
+        <div>
+            <div class="left">
+                <ul class="vertical">
+                    <li href=""><a id="active">Home</a></li>
+                    
+                    <li href=""><a class="verticalnav" verticalnav href="">HTML Basic Tags</a></li>
+                    <li href=""><a class="verticalnav" >HTML for tags</a></li>
+                    <li href=""><a class="verticalnav" >CSS Types</a></li>
+                    <li><a class="verticalnav" >CSS Selectors</a></li>
+                    <li><a class="verticalnav" >CSS Border Properties</a></li>
+                    <li><a class="verticalnav" >CSS Float</a></li>
+                    <li><a class="verticalnav" >CSS Animation</a></li>
+                    <li><a class="verticalnav" >CSS Text Properties</a></li>
+                    <li><a class="verticalnav" >CSS Text Navigation</a></li>
+                    <li><a class="verticalnav" >CSS Text Transition</a></li>
+                    <li><a class="verticalnav" >CSS Media Queries</a></li>
+                </ul>
+            </div>
+            <!---Float Property-->
+            <div class="center">
+                <p><img src="assets/js.png" height="100px" width="160px" alt="js">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, dignissimos assumenda reprehenderit magnam dolor fugiat debitis perspiciatis, dolorum nemo quaerat, doloribus molestiae quos! Veniam vel alias eum ratione corporis minus!</p>
+                <p><img src="assets/js.png" height="100px" width="160px" alt="js" style="float: left;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, dignissimos assumenda reprehenderit magnam dolor fugiat debitis perspiciatis, dolorum nemo quaerat, doloribus molestiae quos! Veniam vel alias eum ratione corporis minus!</p>
+                <p><img src="assets/js.png" height="100px" width="160px" alt="js" style="float: right;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, dignissimos assumenda !</p>
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="footer">
+            <h2>@copy; www.abcdshopping.com</h2>
+            <h3>Contact</h3>
+            <ul style="text-align: left;">
+                <li>9955764521</li>
+                <li>7250856803</li>
+            </ul>
+            <img src="assets/html.png" class="transition" alt="html" style="text-align: left;">
+        </div>
+    </div>
+</body>
+</html>

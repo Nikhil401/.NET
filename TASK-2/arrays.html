@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var courses=["DOTNET","JAVA", "PHP"];
+        for(var i=0;i<courses.length;i++)
+        {
+            document.write(courses[i]+"<br>");
+        }
+        //push, pop, shift, unshift
+        document.write("<hr>");
+        document.write("<br>")
+        document.write(courses.length);
+        document.write(courses.push("PYTHON"));
+        document.write("<br>");
+        document.write(courses.length);
+        document.write("<br>");
+        for(var i=0;i<courses.length;i++)
+        {
+            document.write(courses[i]+"<br>");
+        }
+        document.write("<hr>");
+        document.write("Shift and unshift");
+        var deleted1=courses.shift();
+        document.write("<br> shifted element is: <br>"+deleted1+"<br>");
+        document.write("<br>"+courses.length+"<br>");
+
+        courses.unshift("HTML", "CSS", "JS");
+        document.write(courses.length+"<br>");
+
+        for(var i=0;i<courses.length;i++)
+        {
+            document.write(courses[i]+"<br>");
+        }
+        document.write("<hr>");
+
+        //for-in
+         document.write("<hr>");
+         for(var course in courses)
+        {
+            document.write(courses[course]+"<br>");
+        }
+        //for-of
+        // document.write("<hr> for-of <br>");
+        //  for(var course in courses)
+        // {
+        //     document.write(courses+"<br>");
+        // }
+            document.write("<hr>");
+        // Arrays Methods
+        const training=[".NET","JAVA","PHP","AZURE"];
+        document.write(training+"<br>");
+        training.splice(0,0,'WEBUI');
+        document.write(training+"<br>");
+        training.splice(3,1);
+        document.write(training);
+        document.write("<br>");
+        training.splice(1,1,"nikhil","rahul");
+        document.write(training);
+        document.write("<br>");
+        // training.splice(1,3);
+        // document.write(training);
+        document.write("<hr>");
+
+        //CONCAT
+        const batch1=['nikhil','peter', 'sam'];
+        const batch2=['daisy','rahul','ramesh'];
+        const batch3=batch1.concat(batch2);
+        document.write(batch3);
+        document.write("<hr>");
+        //reverse()
+        var rev=batch3.reverse();
+        document.write(rev);
+        document.write("<hr>");
+
+        //indexOf and lastIndexOf
+        const colors=['blue','red','green','red','white'];
+        document.write(colors);
+        document.write("<br>");
+        var colo_blue=colors.indexOf('blue');
+        document.write(colo_blue+"<br>");
+        var colo_red=colors.lastIndexOf('red');
+        document.write(colo_red+"<br>");
+
+        //slice
+        var fav_colors=colors.slice(0,2);
+        document.write(fav_colors+"<br>");
+        var fav_colors1=colors.slice(-2,-1);
+        document.write(fav_colors1);
+        document.write("<hr>");
+
+        //sort
+        var number1=[3,4,5,2,1,6,3,8,7];
+        document.write(number1.sort());
+        document.write("<hr>");
+
+        //filter
+        document.write(training+"<br>");
+        var filter_data=training.filter(fil=>fil.length==5);
+        document.write(filter_data);
+
+        //Self study=>  Date and Mathematical function
+
+        var str="NikhiLL";
+        document.write(str.rev());
+
+    </script>
+</body>
+</html>

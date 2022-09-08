@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in CSS</title>
+    <style>
+        img{
+            border-radius: 60px;
+            position: relative;
+            animation-name: car_animation;
+            @keyframes car_animatin {
+                0% {background-image: url("assets/car.jfif");left:0px; top:0px;}
+                20% {background-image: url("assets/html.jpg");left:0px; top:0px;}
+                50% {background-image: url("assets/js.png");left:0px; top:0px;}
+                
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!---reaponsive media query-->   
+    <img src="assets/car.jfif" height="100px" width="100px" alt="CAR">
+</body>
+</html>
